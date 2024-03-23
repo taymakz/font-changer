@@ -1,0 +1,45 @@
+{
+  "name": "nuxt-app",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxi build ",
+    "dev:pwa": "VITE_PLUGIN_PWA=true nuxi dev",
+    "dev": "nuxi dev --dotenv .env.dev",
+    "format": "eslint . --fix",
+    "generate": "nuxi generate",
+    "postinstall": "nuxi prepare",
+    "start": "node .output/server/index.mjs",
+    "start:generate": "npx serve .output/public",
+    "typecheck": "vue-tsc --noEmit"
+  },
+  "dependencies": {
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
+    "lucide-vue-next": "^0.359.0",
+    "radix-vue": "^1.5.3",
+    "tailwind-merge": "^2.2.2",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.9.0",
+    "@nuxt/eslint": "0.3.0-beta.3",
+    "@nuxtjs/color-mode": "^3.3.3",
+    "@nuxtjs/seo": "2.0.0-rc.9",
+    "@nuxtjs/tailwindcss": "^6.11.4",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@vite-pwa/nuxt": "^0.6.0",
+    "@vueuse/nuxt": "^10.9.0",
+    "consola": "^3.2.3",
+    "eslint": "latest",
+    "mini-svg-data-uri": "^1.4.4",
+    "nuxt": "^3.11.1",
+    "nuxt-build-cache": "^0.1.1",
+    "nuxt-lucide-icons": "^1.0.4",
+    "pinia": "^2.1.7",
+    "typescript": "latest",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0",
+    "vue-tsc": "^2.0.7"
+  }
+}
